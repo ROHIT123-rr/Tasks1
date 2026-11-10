@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner-friendly webpage demonstrating HTML, CSS and JavaScript." />
+  <title>Web Development | Learn by Building</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">Web<span>Starter</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#topics">What You'll Learn</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">HTML · CSS · JAVASCRIPT</p>
+        <h1>Build your first <span>webpage.</span></h1>
+        <p class="lead">A simple, responsive introduction to the three core technologies of front-end web development.</p>
+        <a class="primary-link" href="#topics">Explore the basics <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration of a laptop displaying code">
+        <div class="code-window">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <p><span class="code-purple">&lt;html&gt;</span></p>
+          <p class="indent"><span class="code-blue">&lt;h1&gt;</span>Hello, web!<span class="code-blue">&lt;/h1&gt;</span></p>
+          <p class="indent"><span class="code-green">&lt;p&gt;</span>Start creating.<span class="code-green">&lt;/p&gt;</span></p>
+          <p><span class="code-purple">&lt;/html&gt;</span></p>
+        </div>
+        <div class="art-label">Your ideas, online.</div>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container intro-inner">
+        <p class="eyebrow">THE FIRST STEP</p>
+        <h2>Every great website starts with the basics.</h2>
+        <p>HTML gives a page its structure, CSS makes it look beautiful, and JavaScript brings it to life. This mini project demonstrates how they work together.</p>
+      </div>
+    </section>
+
+    <section class="topics section container" id="topics">
+      <div class="section-heading">
+        <p class="eyebrow">THE BUILDING BLOCKS</p>
+        <h2>What you'll learn</h2>
+      </div>
+      <div class="card-grid">
+        <article class="topic-card">
+          <div class="topic-icon html-icon">&lt;/&gt;</div>
+          <h3>HTML</h3>
+          <p>Structure content with headings, paragraphs, images, links and semantic elements.</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Explore HTML <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="topic-card">
+          <div class="topic-icon css-icon">✦</div>
+          <h3>CSS</h3>
+          <p>Style your page with colors, typography, spacing, responsive layouts and visual effects.</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">Explore CSS <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="topic-card">
+          <div class="topic-icon js-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>Add interaction to your website with events, functions and dynamic behavior.</p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Explore JavaScript <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="demo-section section" id="contact">
+      <div class="container demo-inner">
+        <div>
+          <p class="eyebrow">A LITTLE INTERACTION</p>
+          <h2>Try the JavaScript button</h2>
+          <p>Click the button to trigger a message using a JavaScript event listener.</p>
+        </div>
+        <button class="demo-button" id="helloButton" type="button">Click me!</button>
+        <p class="demo-message" id="demoMessage" aria-live="polite">Your message will appear here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home">Web<span>Starter</span></a>
+      <p>Made for learning · HTML, CSS & JavaScript</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
